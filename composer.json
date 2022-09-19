@@ -1,0 +1,43 @@
+{
+  "name": "solinor/paymenthighwayio",
+  "description": "Paymenthighway SDK",
+  "type": "library",
+  "homepage" : "https://paymenthighway.fi/dev/",
+  "license" : "MIT",
+  "authors" : [
+    {
+      "name" : "Jonni Larjomaa",
+      "email" : "jonni.larjomaa@solinor.com"
+    },
+    {
+      "name" : "Pauli Kostamo",
+      "email" : "pauli.kostamo@paymenthighway.fi"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.0",
+    "ramsey/uuid" : "^3.0",
+    "nategood/httpful": "^0.2",
+    "respect/validation": "^1.0"
+  },
+  "require-dev" : {
+    "phpunit/phpunit" : "^4.8"
+  },
+  "autoload" : {
+    "psr-4": {
+      "Solinor\\PaymentHighway\\": "src/"
+    }
+  },
+  "autoload-dev" : {
+    "psr-4" : {
+      "Solinor\\PaymentHighway\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "bin-dir": "bin"
+  },
+  "minimum-stability" : "stable",
+  "scripts": {
+    "test": "phpunit"
+  }
+}
